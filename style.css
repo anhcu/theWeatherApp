@@ -1,0 +1,116 @@
+header{
+    border: 2px solid black;
+}
+
+.headerTop{
+    text-transform: uppercase; 
+    background-color: burlywood;
+    /* border: 2px solid black; */
+
+}
+
+.header{
+    font-size: 40px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-transform: uppercase; 
+    line-height: 230%;
+    margin-left: 90px;
+}
+
+.icon{
+    height: 80px;
+}
+
+.days{
+    text-transform: uppercase; 
+    padding-left: 200px;
+    color: blue;
+    font-size: 15px;
+
+}
+
+hr {
+    width: 100%;
+    height: 3px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    /* margin-top: 80px;
+    margin-bottom:90px; */
+    background-color:#555;
+ }
+
+ /*---------*/ 
+
+ .grid-container {
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'menu main main'
+      'menu footer footer';
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px; 
+  }
+
+ /* .header { 
+    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 30px;
+    grid-area: header;
+    color: black;  
+}  */
+
+
+.menu { 
+    grid-area: menu; 
+}
+.main { 
+    grid-area: main; 
+}
+
+.btn {
+    border: none;
+    outline: none;
+    background: blue;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    width: 300px;
+    height: 35px;
+}
+
+.forcastInfo {
+    margin: 10px;
+    width: 125px;
+    background-color: #000080;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    display: row
+}
+
+
+
+.todayForcast{
+    text-align: left;
+    font-weight: bold;
+}
+
+
+#historyList li{
+    border: 2px solid black;
+    margin-top:6px;
+    border-radius: 8px;
+    background-color: gray;
+    list-style-type: none;
+} 
